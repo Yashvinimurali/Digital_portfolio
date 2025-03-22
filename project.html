@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <style> 
+        /* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Recipe Cards Section */
+.recipe-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.recipe-card .recipe-description {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Recipe Corner</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Delicious Recipes for Every Occasion</h2>
+        <p>Explore a variety of mouth-watering recipes with easy-to-follow instructions.</p>
+    </section>
+
+    <!-- Recipe Cards Section -->
+    <section class="recipe-cards">
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300" alt="Recipe 1">
+            <h3>Spaghetti Bolognese</h3>
+            <p class="recipe-description">A classic Italian dish with a rich and hearty meat sauce.</p>
+            <a href="#">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300" alt="Recipe 2">
+            <h3>Chicken Curry</h3>
+            <p class="recipe-description">A flavorful, spicy curry made with tender chicken and aromatic spices.</p>
+            <a href="#">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300" alt="Recipe 3">
+            <h3>Vegetable Stir Fry</h3>
+            <p class="recipe-description">A colorful mix of fresh vegetables stir-fried in a savory sauce.</p>
+            <a href="#">View Recipe</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Recipe Corner. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
